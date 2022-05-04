@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background: #eef8ff;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 115px;
+    border-bottom-right-radius: 115px;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.f-row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.f-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.f-col:nth-child(2), .f-col:nth-child(3){
+    flex-basis: 15%;
+}
+.f-logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.f-col h3{
+    width: fit-content;
+    margin-bottom: 35px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.f-ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.f-ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.f-ul li a:hover{
+    color: darkorange;
+}
+form{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icon .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.f-copyright{
+    text-align: center;
+}
+.f-underline{
+    width: 100%;
+    height: 3px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+@media (max-width: 700px) {
+    footer{
+        bottom: unset;
+    }
+    .f-col{
+        flex-basis: 100%;
+    }
+    .f-col:nth-child(2), .f-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}

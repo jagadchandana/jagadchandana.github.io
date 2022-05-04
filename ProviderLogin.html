@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Provider login</title>
+  <link rel="stylesheet" href="../CSSFile/providerloginStyle.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-button" onclick="login()">Login</button>
+            <button type="button" class="toggle-button" onclick="register()">Register</button>
+        </div>
+
+   <!-- </div>-->
+    <form action="" class="input-group" id="login">
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+         <!--   <a href=""><img src="#" alt="facebook"></a>
+            <a href=""><img src="#" alt="Google"></a>
+            <a href=""><img src="#" alt="Whatsapp"></a>-->
+        </div>
+        <input type="text" class="input-field" placeholder="User Id..." required>
+        <input type="text" class="input-field" placeholder="User Password..." required>
+        <input type="checkbox" class="check-box"><span>Remember My Password</span>
+        <button type="submit" class="all-btn">Login</button>
+    </form>
+        <form action="" class="input-group" id="register">
+
+            <input type="text" class="input-field" placeholder="First Name..."  required>
+            <input type="text" class="input-field" placeholder="Second Name..." required>
+            <input type="text" class="input-field" placeholder="NIC Number..." required>
+            <input type="text" class="input-field" placeholder="Password..." required>
+            <input type="text" class="input-field" placeholder="Re-type Password..." required>
+            <button type="submit" class="all-btn" onclick="next()">Next</button>
+        </form>
+        <form action="" class="input-group" id="next-1">
+
+            <input type="text" class="input-field" placeholder="First Name..."  required>
+            <input type="text" class="input-field" placeholder="Second Name..." required>
+            <input type="text" class="input-field" placeholder="NIC Number..." required>
+            <input type="text" class="input-field" placeholder="Password..." required>
+            <input type="text" class="input-field" placeholder="Re-type Password..." required>
+            <button type="submit" class="all-btn" onclick="next()">Next</button>
+        </form>
+</div>
+</div>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    var a = document.getElementById("next-1")
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+    function next(){
+        y.style.left = "-400px";
+        a.style.left = "450px"
+
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
